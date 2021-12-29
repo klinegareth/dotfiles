@@ -9,7 +9,8 @@ if status is-login
 end
 
 #Aliases 
-alias dotfiles "/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME " 
+alias dotfiles "/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME add" 
+complete dotfiles --wraps "/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME add" -f 
 alias xmonadconf "nvim ~/.xmonad/xmonad.hs"
 alias xinitconf "nvim ~/.xinitrc"
 alias conkyconf "nvim ~/.conkyrc"

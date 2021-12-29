@@ -10,6 +10,8 @@
  set scrolloff=8
  set nohlsearch
  set guicursor=a:ver10-blinkwait250-blinkoff250-blinkon250
+ set tabstop=4
+ set shiftwidth=4
 
 " Abbreviations
  abbr stbr ʕ·ᴥ·ʔ
