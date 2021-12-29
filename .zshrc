@@ -110,7 +110,7 @@ zstyle ':autocomplete:*' widget-style menu-select
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME " 
+alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME" 
 alias xmonadconf="nvim ~/.xmonad/xmonad.hs"
 alias xinitconf="nvim ~/.xinitrc"
 alias conkyconf="nvim ~/.conkyrc"
