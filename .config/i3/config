@@ -67,7 +67,7 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+x kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec --no-startup-id dmenu_run -b -p 'ʕ·ᴥ·ʔ ' -fn 'CozetteVector:pixelsize=64' -nb '#27191c' -nf '#ffecdd' -sb '#4c3136' -sf '#ffecdd'
+bindsym $mod+d exec --no-startup-id dmenu_run -b -p 'ʕ·ᴥ·ʔ ' -fn 'CozetteVector' -nb '#27191c' -nf '#ffecdd' -sb '#4c3136' -sf '#ffecdd'
 
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
