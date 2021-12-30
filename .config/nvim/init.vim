@@ -18,27 +18,24 @@
  abbr lstbr -ʕ·ᴥ·ʔ
  abbr rstbr ʕ·ᴥ·ʔ-
 
-" Netrw tweaks
- let g:netrw_banner=0
- let g:netrw_liststyle=3
- let g:netrw_winsize = 35
-
 " Sensible keyboard navigation in wrapped text
  map k gk
  map j gj
 
 " just a whole bunch of shortcuts
+ nmap <F5> <Plug>VimspectorContinue
  nnoremap <leader>N :set number! relativenumber!<CR>
  nnoremap <leader>g :Go<CR>
  nnoremap <leader>w :w<CR>
  nnoremap <leader>Q :qa!<CR>
  nnoremap <leader>q :q!<CR>
- nnoremap <leader>l :Lex<CR>
+ nnoremap <leader>l :NERDTreeToggle<CR>
  nnoremap <leader>v :e! ~/.config/nvim/init.vim<CR> 
  nnoremap <leader>e :e 
  nnoremap <leader>B :bn<CR> 
  nnoremap <leader>b :b 
  nnoremap <leader>r :source ~/.config/nvim/init.vim<CR> 
+ " i dont think i actually need these?
  nnoremap <leader>p :set paste<CR>i
  nnoremap <leader>np :set nopaste<CR>
 
@@ -80,7 +77,7 @@ call plug#begin('~/.vim/plugged')
  Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
- Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+ Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
  Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " Using git URL
@@ -100,6 +97,9 @@ call plug#begin('~/.vim/plugged')
 
 " gruvbox
  Plug 'morhetz/gruvbox'
+
+" vimspector
+ Plug 'puremourning/vimspector'
 
 call plug#end()
 
