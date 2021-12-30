@@ -111,11 +111,14 @@ zstyle ':autocomplete:*' widget-style menu-select
 # For a full list of active aliases, run `alias`.
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME" 
+alias dcommit='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME commit -am' 
+alias dstatus="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME status" 
 alias xmonadconf="nvim ~/.xmonad/xmonad.hs"
 alias xinitconf="nvim ~/.xinitrc"
 alias conkyconf="nvim ~/.conkyrc"
 alias userchrome="nvim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fishconf='nvim ~/.config/fish/config.fish -c "set syntax=bash"'
+alias zshconf='nvim ~/.zshrc'
 alias conkylconf="nvim ~/.config/conky/conkyL.conf"
 alias conkyrconf="nvim ~/.config/conky/conkyR.conf"
 alias i3conf="nvim ~/.config/i3/config"
