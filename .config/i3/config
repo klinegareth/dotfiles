@@ -38,7 +38,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # hidpi settings
-# exec xrandr --output eDP1 --scale 1.2 --dpi 384
+exec_always xrandr --output eDP1 --scale 1.6 --dpi 388
 
 # picom
 exec pkill picom
