@@ -2,7 +2,7 @@
  let mapleader=" "
 
 " Autosave on buffer change
-  au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | write | endif
+ au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | write | endif
 
  set clipboard^=unnamedplus
  set number relativenumber
@@ -12,19 +12,21 @@
  set guicursor=a:ver10-blinkwait250-blinkoff250-blinkon250
  set tabstop=4
  set shiftwidth=4
+ let NERDTreeMinimalUI=0
+ let NERDTreeMinimalMenu=1
 
-" Abbreviations
+" abbreviations
  abbr stbr ʕ·ᴥ·ʔ
  abbr lstbr -ʕ·ᴥ·ʔ
  abbr rstbr ʕ·ᴥ·ʔ-
 
-" Sensible keyboard navigation in wrapped text
+" sensible keyboard navigation in wrapped text
  map k gk
  map j gj
 
 " just a whole bunch of shortcuts
  nmap <F5> <Plug>VimspectorContinue
- nnoremap <leader>N :set number! relativenumber!<CR>
+ nnoremap <leader>n :set number! relativenumber!<CR>
  nnoremap <leader>g :Go<CR>
  nnoremap <leader>w :w<CR>
  nnoremap <leader>Q :qa!<CR>
@@ -35,9 +37,6 @@
  nnoremap <leader>B :bn<CR> 
  nnoremap <leader>b :b 
  nnoremap <leader>r :source ~/.config/nvim/init.vim<CR> 
- " i dont think i actually need these?
- nnoremap <leader>p :set paste<CR>i
- nnoremap <leader>np :set nopaste<CR>
 
 " No shift for command mode
  nnoremap ; :
@@ -101,13 +100,16 @@ call plug#begin('~/.vim/plugged')
 " vimspector
  Plug 'puremourning/vimspector'
 
+" vim-polyglot
+ Plug 'sheerun/vim-polyglot'
+
 call plug#end()
 
 function! s:clearbg()
 	highlight Normal     ctermbg=NONE guibg=NONE
-	highlight LineNr     ctermbg=NONE guibg=NONE
-	highlight SignColumn ctermbg=NONE guibg=NONE
-	highlight StatusLine ctermbg=NONE guibg=NONE
+"	highlight LineNr     ctermbg=NONE guibg=NONE
+"	highlight SignColumn ctermbg=NONE guibg=NONE
+"	highlight StatusLine ctermbg=NONE guibg=NONE
 endfunction
 
 autocmd vimenter * ++nested colorscheme gruvbox | call <SID>clearbg()

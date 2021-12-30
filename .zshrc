@@ -76,6 +76,7 @@ plugins=(
 	zsh-autocomplete
 	zsh-autosuggestions
 	zsh-syntax-highlighting
+	sudo
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -99,7 +100,7 @@ zstyle ':autocomplete:*' widget-style menu-select
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
