@@ -113,6 +113,7 @@ zstyle ':autocomplete:*' widget-style menu-select
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME" 
 alias dcommit='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME commit -am' 
 alias dstatus="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME status" 
+alias dpush="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME push" 
 alias xmonadconf="nvim ~/.xmonad/xmonad.hs"
 alias xinitconf="nvim ~/.xinitrc"
 alias conkyconf="nvim ~/.conkyrc"
