@@ -117,6 +117,7 @@ alias dpush="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME push"
 alias dpull="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME pull" 
 alias xmonadconf="nvim ~/.xmonad/xmonad.hs"
 alias xinitconf="nvim ~/.xinitrc"
+alias alacrittyconf="nvim ~/.config/alacritty/alacritty.yml"
 alias conkyconf="nvim ~/.conkyrc"
 alias userchrome="nvim ~/.mozilla/firefox/*.default-release/chrome/userChrome.css"
 alias fishconf='nvim ~/.config/fish/config.fish -c "set syntax=bash"'
