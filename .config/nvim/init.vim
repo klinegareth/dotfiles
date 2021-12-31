@@ -33,7 +33,7 @@
  nnoremap <leader>q :q!<CR>
  nnoremap <leader>l :NERDTreeToggle<CR>
  nnoremap <leader>v :e! ~/.config/nvim/init.vim<CR> 
- nnoremap <leader>e :e 
+ nnoremap <leader>e :FZF<CR> 
  nnoremap <leader>B :bn<CR> 
  nnoremap <leader>b :b 
  nnoremap <leader>r :source ~/.config/nvim/init.vim<CR> 
