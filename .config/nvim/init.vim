@@ -127,6 +127,9 @@ call plug#begin('~/.vim/plugged')
  " vim-gsl until i can get treesitter/lsp to work lol
  Plug 'tikhomirov/vim-glsl'
 
+ " Auto-close brackets
+ Plug 'jiangmiao/auto-pairs'
+
 call plug#end()
 
 function! s:clearbg()
