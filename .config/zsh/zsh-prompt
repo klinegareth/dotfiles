@@ -1,0 +1,25 @@
+#!/bin/sh
+
+## autoload vcs and colors
+autoload -Uz vcs_info
+autoload -U colors && colors
+
+# enable only git 
+zstyle ':vcs_info:*' enable git 
+
+# setup a hook that runs before every ptompt. 
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+
+# zstyle ':vcs_info:git:*' formats " %r/%S %b %m%u%c "
+zstyle ':vcs_info:git:*' formats " %{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})"
+
+prompt_char() {
+	if [ $UID -eq 0 ]; then echo "%{$fg[red]%}#%{$reset_color%}"; else echo ʕ·ᴥ·ʔ-; fi
+}
+
+# format our main prompt for hostname current folder, and permissions.
+PROMPT='%(?,,%{$fg[red]%}FAIL %{$reset_color%})%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}%m%{$reset_color%}: %{$fg_bold[blue]%}%~%{$reset_color%}%{$vcs_info_msg_0_%}%{$reset_color%}
+$(prompt_char) '
+RPROMPT='%{$fg[yellow]%}[%*]%{$reset_color%}'
