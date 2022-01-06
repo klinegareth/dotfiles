@@ -49,3 +49,6 @@ zsh_add_plugin "zsh-users/zsh-completions"
 # FZF 
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+
+# Zoxide
+eval "$(zoxide init zsh)"
