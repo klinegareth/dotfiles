@@ -40,6 +40,7 @@
 
 " No shift for command mode
  nnoremap ; :
+ nnoremap : ;
 
 " Search down into subfolders with tab-completion for all file-related tasks
  set path+=**
@@ -114,8 +115,17 @@ call plug#begin('~/.vim/plugged')
 " vimspector
  Plug 'puremourning/vimspector'
 
-" vim-polyglot
- Plug 'sheerun/vim-polyglot'
+ "treesitter 
+ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
+ " lsp
+ Plug 'neovim/nvim-lspconfig'
+
+ " glslView-nvim
+ Plug 'timtro/glslView-nvim'
+
+ " vim-gsl until i can get treesitter/lsp to work lol
+ Plug 'tikhomirov/vim-glsl'
 
 call plug#end()
 
