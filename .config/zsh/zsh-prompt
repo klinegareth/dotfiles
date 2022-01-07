@@ -1,5 +1,5 @@
 #!/bin/sh
-
+export LANG=en_US.UTF-8
 ## autoload vcs and colors
 autoload -Uz vcs_info
 autoload -U colors && colors
