@@ -1,6 +1,8 @@
 " Set leader to spacebar
  let mapleader=" "
 
+ let g:colorizer_auto_filetype='css,html'
+
 " Autosave on buffer change
  au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | write | endif
 
