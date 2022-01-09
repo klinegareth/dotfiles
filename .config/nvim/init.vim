@@ -130,6 +130,9 @@ call plug#begin('~/.vim/plugged')
  " Auto-close brackets
  Plug 'jiangmiao/auto-pairs'
 
+ " Colorizer
+ Plug 'chrisbra/Colorizer' 
+
 call plug#end()
 
 function! s:clearbg()
