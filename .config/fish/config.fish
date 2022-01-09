@@ -1,5 +1,8 @@
-#Greeting 
-theme_gruvbox dark hard
+fish_vi_key_bindings
+
+set fish_cursor_default line
+set fish_cursor_insert line
+set fish_cursor_replace_one line
 
 # Spacefish settings
 set SPACEFISH_PROMPT_ADD_NEWLINE false
@@ -35,17 +38,3 @@ alias i3conf="nvim ~/.config/i3/config"
 alias gnotes="nvim ~/.notes.txt -c 'Go 60%x50%'"
 alias todo='nvim ~/.todo.txt -c "setlocal foldmethod=indent" -c "Go 60%x50% | highlight Normal ctermbg=NONE guibg=NONE | highlight LineNr ctermbg=NONE guibg=NONE | highlight SignColumn ctermbg=NONE guibg=NONE"'
 alias n="nvim"
-
-##Prompt
-#function fish_prompt --description 'custom fish prompt'
-#  set_color ffecdd
-#  printf (pwd)
-#    echo -e ''
-#  echo "ʕ·ᴥ·ʔ- "
-#end
-#
-#function fish_right_prompt --description 'custom fish right prompt'
-#  set_color ffecdd
-#    date '+[%H:%M]'
-#end
-
