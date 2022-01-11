@@ -1,6 +1,7 @@
 " Set leader to spacebar
  let mapleader=" "
 
+ set shell=/usr/bin/fish
  let g:colorizer_auto_filetype='css,html'
 
 " Autosave on buffer change
@@ -21,6 +22,7 @@
  abbr stbr ʕ·ᴥ·ʔ
  abbr lstbr -ʕ·ᴥ·ʔ
  abbr rstbr ʕ·ᴥ·ʔ-
+ abbr p5jst p5-js-tutorial
 
 " sensible keyboard navigation in wrapped text
  map k gk
@@ -39,6 +41,7 @@
  nnoremap <leader>B :bn<CR> 
  nnoremap <leader>b :b 
  nnoremap <leader>r :source ~/.config/nvim/init.vim<CR> 
+ nnoremap <leader>t :ToggleTerm direction=float<CR>
 
 " No shift for command mode
  nnoremap ; :
@@ -135,7 +138,10 @@ call plug#begin('~/.vim/plugged')
  " Colorizer
  Plug 'chrisbra/Colorizer' 
 
-call plug#end()
+ " toggleterm
+ Plug 'akinsho/toggleterm.nvim'
+
+ call plug#end()
 
 function! s:clearbg()
 	highlight Normal     ctermbg=NONE guibg=NONE
