@@ -10,7 +10,7 @@ set theme midnight
 set newtab about:blank
 
 " Binds
-bind ; fillcmdline_notrail
+unbind ;
 bind ;x hint -F e => { const pos = tri.dom.getAbsoluteCentre(e); tri.excmds.exclaim_quiet("xdotool mousemove --sync " + window.devicePixelRatio * pos.x + " " + window.devicePixelRatio * pos.y + "; xdotool click 1")}
 bind ;X hint -F e => { const pos = tri.dom.getAbsoluteCentre(e); tri.excmds.exclaim_quiet("xdotool mousemove --sync " + window.devicePixelRatio * pos.x + " " + window.devicePixelRatio * pos.y + "; xdotool keydown ctrl+shift; xdotool click 1; xdotool keyup ctrl+shift")}
 bind <A-p> pin
@@ -84,7 +84,7 @@ bind gr reader
 bind gu urlparent
 bind gU urlroot
 bind gf viewsource
-bind : ;
+bind : fillcmdline_notrail
 bind s fillcmdline open search
 bind S fillcmdline tabopen search
 bind M gobble 1 quickmark
@@ -117,9 +117,9 @@ bind ;v hint -W mpvsafe
 bind ;V hint -V
 bind ;w hint -w
 bind ;t hint -W tabopen
-bind ;O hint -W fillcmdline_notrail open 
-bind ;W hint -W fillcmdline_notrail winopen 
-bind ;T hint -W fillcmdline_notrail tabopen 
+bind ;O hint -W fillcmdline_notrail open
+bind ;W hint -W fillcmdline_notrail winopen
+bind ;T hint -W fillcmdline_notrail tabopen
 bind ;z hint -z
 bind ;m composite hint -Jpipe img src | open images.google.com/searchbyimage?image_url=
 bind ;M composite hint -Jpipe img src | tabopen images.google.com/searchbyimage?image_url=
