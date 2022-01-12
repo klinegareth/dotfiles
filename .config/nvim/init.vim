@@ -33,6 +33,7 @@
  nmap <F5> <Plug>VimspectorContinue
  nnoremap <leader>n :set number! relativenumber!<CR>
  nnoremap <leader>g :Go<CR>
+ nnoremap <leader>G :Go 60%x50%<CR>
  nnoremap <leader>w :w<CR>
  nnoremap <leader>Q :qa!<CR>
  nnoremap <leader>q :q!<CR>
