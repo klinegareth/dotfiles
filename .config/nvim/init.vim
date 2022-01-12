@@ -22,7 +22,8 @@
  abbr stbr ʕ·ᴥ·ʔ
  abbr lstbr -ʕ·ᴥ·ʔ
  abbr rstbr ʕ·ᴥ·ʔ-
- abbr p5jst p5-js-tutorial
+ abbr p5jst p5-js-tutorial",
+ abbr "ci/ "code/intro/
 
 " sensible keyboard navigation in wrapped text
  map k gk
