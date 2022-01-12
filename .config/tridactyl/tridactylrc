@@ -8,6 +8,9 @@ set configversion 2.0
 set editorcmd alacritty -e nvim
 set theme george
 set newtab about:blank
+set smoothscroll true
+set scrollduration 200
+set completionfuzziness 0.5
 
 " Binds
 unbind ;
