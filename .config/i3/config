@@ -222,7 +222,6 @@ client.background       #ffffff
 # Keybinds
 bindsym $mod+b scratchpad show
 bindsym $mod+Shift+b move scratchpad
-bindsym $mod+Shift+t floating toggle
 
 bindsym $mod+Shift+f exec firefox
 
