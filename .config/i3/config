@@ -61,7 +61,7 @@ bindsym $mod+x kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run -b -p 'ʕ·ᴥ·ʔ ' -fn 'CozetteVector' -nb '#27191c' -nf '#ffecdd' -sb '#4c3136' -sf '#ffecdd'
-bindsym $mod+d exec rofi -show drun -dpi 291 -theme george.rasi
+bindsym $mod+d exec rofi -show drun -dpi 97 -theme george.rasi
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
 set $mode_launcher ʕ·ᴥ·ʔ- [f]irefox [d]olphin [s]potify [n]mtui 
@@ -219,7 +219,7 @@ bindsym $mod+Shift+b move scratchpad
 
 bindsym $mod+Shift+f exec firefox
 
-bindsym $mod+g exec rofi -show window -dpi 291 -theme george.rasi
+bindsym $mod+g exec rofi -show window -dpi 97 -theme george.rasi
 
 # Sets border width to 1 pixel
 
