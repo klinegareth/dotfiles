@@ -40,7 +40,7 @@ configuration {
 
 window {
   transparency: "real";
-  width: 300mm;
+  width: 175mm;
   border-radius: 12px;
 }
 
