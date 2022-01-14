@@ -40,7 +40,8 @@ configuration {
 
 window {
   transparency: "real";
-  width: 30%;
+  width: 75ch;
+  height: 45ch;
   border-radius: 12px;
 }
 
