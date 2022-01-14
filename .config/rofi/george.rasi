@@ -1,0 +1,91 @@
+/*
+ * ROFI color theme
+ *
+ * Based on Something Found in the Internet
+ *
+ * User: Contributors
+ * Copyright: *!
+ */
+
+configuration {
+  font: "CozetteVector 12";
+
+  drun {
+    display-name: "ʕ·ᴥ·ʔ-";
+  }
+
+  run {
+    display-name: "ʕ·ᴥ·ʔ-";
+  }
+
+  window {
+    display-name: "ʕ·ᴥ·ʔ-";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
+
+* {
+
+  bg: #282828CC;
+  fg: #fbf1c7;
+  blue: #83a598;
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+  width: 30%;
+  border-radius: 12px;
+}
+
+mainbox {
+  background-color: transparent;
+  children: [inputbar, listview];
+}
+
+inputbar {
+  background-color: inherit;
+  children: [prompt, entry];
+}
+
+entry {
+  background-color: inherit;
+  padding: 12px 3px;
+}
+
+prompt {
+  background-color: inherit;
+  padding: 12px 0px 12px 12px;
+}
+
+listview {
+  background-color: inherit;
+  lines: 8;
+}
+
+element {
+  background-color: transparent;
+  children: [element-text, element-icon];
+}
+
+element-text {
+  padding: 10px;
+  background-color: inherit;
+}
+
+element-text selected {
+  text-color: @blue;
+  background-color: inherit;
+}
+
+element-icon {
+  size: 3.5ch;
+  padding: 10px 10px;
+  background-color: inherit;
+}
