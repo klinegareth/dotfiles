@@ -9,6 +9,7 @@
 
 set shell=/usr/bin/fish
 let g:colorizer_auto_filetype='css,html'
+set nohidden
 
 " Autosave on buffer change
 au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | write | endif
@@ -46,10 +47,7 @@ if has('persistent_undo')
 			set undofile
 endif
 
-let g:netrw_banner=0
-let g:netrw_winsize=15
-let g:netrw_liststyle=3
-let g:netrw_localrmdir='rm -r'
+
 
 
 " ██╗  ██╗███████╗██╗   ██╗██████╗ ██╗███╗   ██╗██████╗ ███████╗
@@ -86,7 +84,7 @@ nnoremap <leader>G :Go 60%x50%<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>Q :qa!<CR>
 nnoremap <leader>q :q!<CR>
-nnoremap <leader>l :Lex<CR>
+nnoremap <leader>l :NERDTreeToggle<CR>
 nnoremap <leader>v :e! ~/.config/nvim/init.vim<CR> 
 nnoremap <leader>e :FZF<CR> 
 nnoremap <leader>B :bn<CR> 
@@ -158,6 +156,9 @@ Plug 'chrisbra/Colorizer'
 
 " toggleterm
 Plug 'akinsho/toggleterm.nvim'
+
+" NERDTREE
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
