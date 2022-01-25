@@ -38,14 +38,14 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # picom
-exec pkill picom
+exec_always --no-startup-id pkill picom
 exec_always --no-startup-id picom --backend glx
 
 # polybar
 exec_always --no-startup-id $HOME/Downloads/dotfiles/polybar/launch.sh
 
 #xwinwrap reload gif background
-exec_always -no-startup-id pkill mpv
+exec --no-startup-id pkill mpv
 exec --no-startup-id xwinwrap -g 6912x3888 -fs -nf -ni -ov -- mpv -wid WID --no-audio --no-config --no-input-terminal --no-input-default-bindings --osc=no --video-zoom=-1 --background='#27191c' --loop $HOME/dotfiles/images/brownroom.gif
 
 # open todos in scratchpad at startup
@@ -238,7 +238,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 
 # I really like the Canadian multilingual keyboard layout
-exec_always setxkbmap 'ca(multi)'
+exec_always --no-startup-id setxkbmap 'ca(multi)'
 
 bindsym $mod+Mod1+g exec i3-msg gaps inner all set 0
 bindsym $mod+Shift+g exec i3-msg gaps inner all set 10
