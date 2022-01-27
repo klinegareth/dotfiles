@@ -38,7 +38,11 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # picom
+<<<<<<< Updated upstream
 exec_always --no-startup-id pkill picom
+=======
+exec_always pkill picom
+>>>>>>> Stashed changes
 exec_always --no-startup-id picom --backend glx
 
 # polybar
@@ -49,6 +53,7 @@ exec --no-startup-id pkill mpv
 exec --no-startup-id xwinwrap -g 6912x3888 -fs -nf -ni -ov -- mpv -wid WID --no-audio --no-config --no-input-terminal --no-input-default-bindings --osc=no --video-zoom=-1 --background='#27191c' --loop $HOME/dotfiles/images/brownroom.gif
 
 # open todos in scratchpad at startup
+exec ~/scripts/startup.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
