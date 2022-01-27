@@ -243,3 +243,8 @@ exec_always --no-startup-id setxkbmap 'ca(multi)'
 bindsym $mod+Mod1+g exec i3-msg gaps inner all set 0
 bindsym $mod+Shift+g exec i3-msg gaps inner all set 10
 border_radius 5
+
+# make zoom less of a mess
+for_window [class="zoom"] floating enable
+for_window [class="zoom" title="Zoom - Licensed Account"] floating disable
+for_window [class="zoom" title="Zoom Meeting"] floating disable
