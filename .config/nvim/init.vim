@@ -10,6 +10,8 @@
 set shell=/usr/bin/fish
 let g:colorizer_auto_filetype='css,html'
 set nohidden
+set ignorecase
+set incsearch
 
 " Autosave on buffer change
 au TextChanged,TextChangedI <buffer> if &readonly == 0 && filereadable(bufname('%')) | write | endif
@@ -73,8 +75,18 @@ map k gk
 map j gj
 
 " No shift for command mode
-nnoremap ; :
-nnoremap : ;
+noremap ; :
+noremap : ;
+
+" easy movement between splits
+nnoremap <leader>h <C-W>h
+nnoremap <leader>j <C-W>j
+nnoremap <leader>k <C-W>k
+nnoremap <leader>l <C-W>l
+nnoremap <leader>H <C-W>10<
+nnoremap <leader>J <C-W>10
+nnoremap <leader>K <C-W>10
+nnoremap <leader>L <C-W>10>
 
 " just a whole bunch of shortcuts
 nmap <F5> <Plug>VimspectorContinue
@@ -84,13 +96,13 @@ nnoremap <leader>G :Go 60%x50%<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>Q :qa!<CR>
 nnoremap <leader>q :q!<CR>
-nnoremap <leader>l :NERDTreeToggle<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>v :e! ~/.config/nvim/init.vim<CR> 
 nnoremap <leader>e :FZF<CR> 
 nnoremap <leader>B :bn<CR> 
 nnoremap <leader>b :b 
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR> 
-nnoremap <leader>t :ToggleTerm direction=float<CR>
+nnoremap <leader>T :ToggleTerm direction=float<CR>
 nnoremap <leader>W :set wrap!<CR>
 
 
