@@ -199,6 +199,7 @@ bindsym $mod+Shift+b move scratchpad
 bindsym $mod+Shift+f exec firefox
 
 bindsym $mod+g exec rofi -show window -dpi 194 -theme george.rasi
+bindsym $mod+period exec rofi -show emoji -modi emoji -dpi 194 -theme george.rasi
 
 # Sets border width to 1 pixel
 
