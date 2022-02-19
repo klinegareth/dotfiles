@@ -151,6 +151,8 @@ Plug 'puremourning/vimspector'
 " treesitter 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
+
+
 " lsp
 Plug 'neovim/nvim-lspconfig'
 
@@ -173,6 +175,25 @@ Plug 'akinsho/toggleterm.nvim'
 Plug 'preservim/nerdtree'
 
 call plug#end()
+
+" TreeSitter Setup
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+ensure_installed = { "javascript", "typescript", "lua", "vim", "css", "fish", "glsl", "json"}, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+	highlight = {
+    	enable = true,              -- false will disable the whole extension
+    	disable = {},  -- list of language that will be disabled
+	},
+	indent = {
+		enable = true,
+		disable = {},
+	},
+	incemental_selection = {
+		enable = true,
+		disable = {},
+	},
+}
+EOF
 
 function! s:clearbg()
 	highlight Normal     ctermbg=NONE guibg=NONE
