@@ -84,9 +84,10 @@ nnoremap <leader>j <C-W>j
 nnoremap <leader>k <C-W>k
 nnoremap <leader>l <C-W>l
 nnoremap <leader>H <C-W>10<
-nnoremap <leader>J <C-W>10
-nnoremap <leader>K <C-W>10
+nnoremap <leader>J <C-W>10-
+nnoremap <leader>K <C-W>10+
 nnoremap <leader>L <C-W>10>
+nnoremap <leader>= <C-W>=
 
 " just a whole bunch of shortcuts
 nmap <F5> <Plug>VimspectorContinue
