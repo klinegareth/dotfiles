@@ -88,6 +88,8 @@ nnoremap <leader>J <C-W>10-
 nnoremap <leader>K <C-W>10+
 nnoremap <leader>L <C-W>10>
 nnoremap <leader>= <C-W>=
+nnoremap <leader>s :split<CR>
+nnoremap <leader>S :vsplit<CR>
 
 " just a whole bunch of shortcuts
 nmap <F5> <Plug>VimspectorContinue
