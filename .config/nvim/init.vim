@@ -106,6 +106,7 @@ nnoremap <leader>B :bn<CR>
 nnoremap <leader>b :b 
 nnoremap <leader>r :source ~/.config/nvim/init.vim<CR> 
 nnoremap <leader>T :ToggleTerm direction=float<CR>
+nnoremap <leader>R :RnvimrToggle<CR>
 nnoremap <leader>W :set wrap!<CR>
 
 
@@ -154,7 +155,8 @@ Plug 'puremourning/vimspector'
 " treesitter 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
-
+" rnvimr
+Plug 'kevinhwang91/rnvimr'
 
 " lsp
 Plug 'neovim/nvim-lspconfig'
