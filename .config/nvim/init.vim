@@ -9,6 +9,9 @@
 
 set shell=/usr/bin/fish
 let g:colorizer_auto_filetype='css,html'
+let g:AutoPairs = {'<':'>', '(':')', '[':']', '{':'}',"'":"'",'"':'"', "`":"`", '```':'```', '"""':'"""', "'''":"'''"}
+let g:AutoPairsShortcutToggle='<M-a>'
+
 set nohidden
 set ignorecase
 set incsearch
