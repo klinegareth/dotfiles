@@ -40,4 +40,4 @@ alias gnotes="nvim ~/.notes.txt -c 'Go 60%x50%'"
 alias todo='nvim ~/Sync/.todo.txt -c "setlocal foldmethod=indent" -c "Go 60%x50% | highlight Normal ctermbg=NONE guibg=NONE | highlight LineNr ctermbg=NONE guibg=NONE | highlight SignColumn ctermbg=NONE guibg=NONE"'
 alias n="nvim"
 alias gitfix='git commit --amend --no-edit'
-alias ls ='exa -1 -l -@ -a --icons --git'
+alias ls="exa -1 -l -@ -a --icons --git"
