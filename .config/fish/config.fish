@@ -1,5 +1,3 @@
-set -gx LANG en_us.UTF-8
-
 set fish_greeting ""
 fish_vi_key_bindings
 
