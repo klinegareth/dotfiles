@@ -43,4 +43,4 @@ alias todo='nvim ~/Sync/.todo.txt -c "setlocal foldmethod=indent" -c "Go 60%x50%
 alias n="nvim"
 alias gitfix='git commit --amend --no-edit'
 alias ls="exa -la --git --icons"
-alias fishreload="source ~/.config/fish/fish.config"
+alias fishreload="source ~/.config/fish/config.fish"
