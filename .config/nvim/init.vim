@@ -111,6 +111,7 @@ nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
 nnoremap <leader>T :ToggleTerm direction=float<CR>
 nnoremap <leader>R :RnvimrToggle<CR>
 nnoremap <leader>W :set wrap!<CR>
+inoremap <C-W> <Esc>dwi
 
 
 
