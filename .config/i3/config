@@ -27,30 +27,30 @@ exec_always --no-startup-id pkill mpv
 exec_always --no-startup-id xwinwrap -g 6912x3888 -fs -nf -ni -ov -- mpv -wid WID --no-audio --no-config --no-input-terminal --no-input-default-bindings --osc=no --video-zoom=-1 --background='#27191c' --loop $HOME/dotfiles/images/brownroom.gif
 
 # open todos in scratchpad at startup
-exec ~/scripts/startup.sh
+exec --no-startup-id ~/scripts/startup.sh
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+x kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec --no-startup-id dmenu_run -b -p 'ʕ·ᴥ·ʔ ' -fn 'CozetteVector' -nb '#27191c' -nf '#ffecdd' -sb '#4c3136' -sf '#ffecdd'
-bindsym $mod+d exec rofi -show drun -dpi 194 -theme george.rasi
+bindsym $mod+d exec --no-startup-id rofi -show drun -dpi 194 -theme george.rasi
 # Press $mod+o followed by either f, t, Escape or Return to launch firefox,
 # thunderbird or return to the default mode, respectively.
 set $mode_launcher ʕ·ᴥ·ʔ- [f]irefox [d]olphin [s]potify [n]mtui 
 bindsym $mod+o mode "$mode_launcher"
 
 mode "$mode_launcher" {
-    bindsym f exec firefox; mode "default"
-    bindsym d exec dolphin; mode "default"
-    bindsym s exec spotify --force-device-scale-factor=1.5; mode "default"
-    bindsym n exec alacritty -e nmtui; mode "default"
+    bindsym f exec --no-startup-id firefox; mode "default"
+    bindsym d exec --no-startup-id dolphin; mode "default"
+    bindsym s exec --no-startup-id spotify --force-device-scale-factor=1.5; mode "default"
+    bindsym n exec --no-startup-id alacritty -e nmtui; mode "default"
     bindsym Escape mode "default"
     bindsym Return exec firefox; mode "default"
 }
@@ -196,10 +196,10 @@ client.background       #ffffff
 bindsym $mod+b scratchpad show
 bindsym $mod+Shift+b move scratchpad
 
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+f exec --no-startup-id firefox
 
 bindsym $mod+g exec rofi -show window -dpi 194 -theme george.rasi
-bindsym $mod+period exec rofi -show emoji -dpi 194 -theme george.rasi
+bindsym $mod+period exec --no-startup-id rofi -show emoji -dpi 194 -theme george.rasi
 
 # Sets border width to 1 pixel
 
@@ -220,8 +220,8 @@ bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
 # I really like the Canadian multilingual keyboard layout
 exec_always --no-startup-id setxkbmap 'ca(multi)'
 
-bindsym $mod+Mod1+g exec i3-msg gaps inner all set 0
-bindsym $mod+Shift+g exec i3-msg gaps inner all set 10
+bindsym $mod+Mod1+g exec --no-startup-id i3-msg gaps inner all set 0
+bindsym $mod+Shift+g exec --no-startup-id i3-msg gaps inner all set 10
 border_radius 5
 
 # make zoom less of a mess
