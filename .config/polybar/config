@@ -60,7 +60,9 @@ modules-center = primary-i3-window
 modules-right = pulseaudio backlight-acpi memory cpu wlan battery 
 
 tray-position = right
-tray-padding = 0 
+tray-padding = 10 
+tray-maxsize = 160
+dpi = 192
 ;tray-background = #0063ff
 
 ;wm-restack = bspwm
