@@ -20,7 +20,7 @@ exec_always --no-startup-id pkill picom
 exec_always --no-startup-id picom --backend glx
 
 # polybar
-exec_always --no-startup-id $HOME/Downloads/dotfiles/polybar/launch.sh
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 #xwinwrap reload gif background
 exec_always --no-startup-id pkill mpv
