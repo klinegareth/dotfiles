@@ -55,9 +55,9 @@ module-margin-right = 0
 
 font-0 = CozetteVector:size=16;12 
 
-modules-left = i3
-modules-center = primary-i3-window
-modules-right = pulseaudio backlight-acpi memory cpu wlan battery 
+modules-left = primary-i3-window 
+modules-center = i3 
+modules-right = pulseaudio backlight-acpi memory cpu wlan battery date
 
 tray-position = right
 tray-padding = 10 
@@ -162,6 +162,11 @@ exec = ~/.config/polybar/scripts/polybar-i3-window/i3-window.py "$(xrandr --list
 [module/secondary-i3-window]
 inherit = module/i3-window
 exec = ~/.config/polybar/scripts/polybar-i3-window/i3-window.py eDP-1
+
+[module/now-playing]
+type = custom/script
+label = %output%
+exec = ~/.config/polybar/scripts/now-playing.sh
 
 [module/xbacklight]
 type = internal/xbacklight
