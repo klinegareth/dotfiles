@@ -11,6 +11,7 @@ set shell=/usr/bin/fish
 let g:colorizer_auto_filetype='css,html'
 let g:AutoPairs = {'<':'>', '(':')', '[':']', '{':'}',"'":"'",'"':'"', "`":"`", '```':'```', '"""':'"""', "'''":"'''"}
 let g:AutoPairsShortcutToggle='<M-a>'
+let @0 = expand('<cfile>')
 
 set nohidden
 set ignorecase
@@ -70,8 +71,9 @@ let mapleader=" "
 abbr stbr ʕ·ᴥ·ʔ
 abbr lstbr -ʕ·ᴥ·ʔ
 abbr rstbr ʕ·ᴥ·ʔ-
-abbr p5jst p5-js-tutorial",
-abbr "ci/ "code/intro/
+abbr sp! ✨
+abbr mu! 🎵
+abbr tr! 🏳️‍⚧️
 
 " sensible keyboard navigation in wrapped text
 map k gk
@@ -111,7 +113,7 @@ nnoremap <leader>r :source ~/.config/nvim/init.vim<CR>
 nnoremap <leader>T :ToggleTerm direction=float<CR>
 nnoremap <leader>R :RnvimrToggle<CR>
 nnoremap <leader>W :set wrap!<CR>
-inoremap <C-W> <Esc>dwi
+nnoremap <leader>u :let @+ = expand('<cfile>')<CR>
 
 
 
