@@ -12,6 +12,7 @@ let g:colorizer_auto_filetype='css,html'
 let g:AutoPairs = {'<':'>', '(':')', '[':']', '{':'}',"'":"'",'"':'"', "`":"`", '```':'```', '"""':'"""', "'''":"'''"}
 let g:AutoPairsShortcutToggle='<M-a>'
 let @0 = expand('<cfile>')
+set statusline+=%{wordcount().words}\ words
 
 set nohidden
 set ignorecase
