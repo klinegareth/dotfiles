@@ -12,14 +12,6 @@ set SPACEFISH_CHAR_SYMBOL "ʕ·ᴥ·ʔ-"
 set SPACEFISH_CHAR_COLOR_SUCCESS normal
 set SPACEFISH_TIME_SHOW true
 
-
-# Start X at login
-if status is-login
-    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
-        exec startx -- -keeptty
-    end
-end
-
 #Aliases 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME" 
 alias dcommit='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME commit -am' 
