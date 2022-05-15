@@ -1,0 +1,13 @@
+require "settings"
+require "maps"
+require "plugins"
+require "george"
+
+vim.cmd "COQnow"
+vim.cmd "colorscheme george"
+vim.cmd "ab stbr ʕ·ᴥ·ʔ"
+vim.cmd "ab lstbr -ʕ·ᴥ·ʔ"
+vim.cmd "ab rstbr ʕ·ᴥ·ʔ-"
+vim.cmd "ab sp! ✨"
+vim.cmd "ab mu! 🎵"
+vim.cmd "ab tr! 🏳️‍⚧️"
