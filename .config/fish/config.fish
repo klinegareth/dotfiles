@@ -28,6 +28,7 @@ alias zshconf='nvim ~/.zshrc'
 alias conkylconf="nvim ~/.config/conky/conkyL.conf"
 alias conkyrconf="nvim ~/.config/conky/conkyR.conf"
 alias i3conf="nvim ~/.config/i3/config"
+alias swayconf="nvim ~/.config/sway/config"
 alias gnotes="nvim ~/.notes.txt -c 'Go 60%x50%'"
 alias todo='nvim ~/Sync/.todo.txt -c "setlocal foldmethod=indent" -c "Go 60%x50% | highlight Normal ctermbg=NONE guibg=NONE | highlight LineNr ctermbg=NONE guibg=NONE | highlight SignColumn ctermbg=NONE guibg=NONE"'
 alias n="nvim"
