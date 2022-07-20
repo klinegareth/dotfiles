@@ -79,10 +79,20 @@ _G.packer_plugins = {
     path = "/home/kline/.local/share/nvim/site/pack/packer/start/bullets.vim",
     url = "https://github.com/dkarter/bullets.vim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/kline/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   coq_nvim = {
     loaded = true,
     path = "/home/kline/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
+  },
+  fzf = {
+    loaded = true,
+    path = "/home/kline/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
   },
   ["goyo.vim"] = {
     loaded = true,

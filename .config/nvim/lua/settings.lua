@@ -23,6 +23,7 @@ o.hidden = true
 
 -- window-local options
 wo.rnu = true
+wo.nu = true
 
 -- buffer-local options
 

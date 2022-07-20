@@ -42,6 +42,7 @@ return require('packer').startup(function()
 
   use 'wbthomason/packer.nvim'  -- Packer can manage itself
   use 'junegunn/goyo.vim' -- Goyo
+  use 'junegunn/fzf' -- fzf
   use 'jiangmiao/auto-pairs' -- Autopairs
   use {"akinsho/toggleterm.nvim", tag = 'v1.*', config = function() -- Toggleterm
     require("toggleterm").setup()
@@ -61,6 +62,7 @@ return require('packer').startup(function()
   use 'ryanoasis/vim-devicons' -- Nvim-web-devicons
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
   use 'nvim-treesitter/nvim-treesitter'
+  use 'github/copilot.vim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

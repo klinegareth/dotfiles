@@ -1,6 +1,6 @@
+require "plugins"
 require "settings"
 require "maps"
-require "plugins"
 require "george"
 
 vim.cmd "COQnow"

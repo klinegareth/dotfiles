@@ -14,8 +14,7 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_run -b -p 'ʕ·ᴥ·ʔ ' -fn 'CozetteVector-18' -nb '#27191c' -nf '#ffecdd' -sb '#4c3136' -sf '#ffecdd' | xargs swaymsg exec --
-
+set $menu wofi --show drun -I -W 15% -p "ʕ·ᴥ·ʔ" 
 gaps inner 8
 
 exec_always "pkill waybar; waybar"
@@ -242,5 +241,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 5
 focus_on_window_activation focus
 
 bindsym $mod+Tab workspace back_and_forth
+
+bindsym $mod+n exec ~/.config/wofi/nmcli-wofi
+bindsym $mod+q exec ~/.config/wofi/wofi-search
+bindsym $mod+period exec ~/.config/wofi/wofimoji
 
 include /etc/sway/config.d/*
